@@ -21,7 +21,7 @@ function canada(userAnswer) {
       points +=100;
   }
   return isCorrect;
-  
+
 }
 
 function uppercase(userAnswer, word) {
@@ -29,6 +29,7 @@ function uppercase(userAnswer, word) {
   // 200 pts
 
   const isCorrect = userAnswer === word.toUpperCase();
+
 
   if (isCorrect) {
     points +=200;
@@ -58,7 +59,7 @@ function squared(userAnswer, number) {
   const isCorrect = userAnswer == number ** 2;
 
   if (isCorrect) {
-    points +=200;
+    points += 200;
   }
   return isCorrect;
   
@@ -86,7 +87,7 @@ function age(userAnswer, currentYear, birthYear) {
   const isCorrect = userAnswer == currentYear - birthYear;
 
   if (isCorrect) {
-    points +=300;
+    points += 300;
   }
   return isCorrect;
   
@@ -104,22 +105,12 @@ function larger(userAnswer, num1, num2) {
   }
 
   if (isCorrect) {
-    points +=300;
+    points += 300;
   }
   return isCorrect;
 }
 
 
-
-function getScore() {
-  return points;
-}
-
-
-
-
-(function() {
-  const words = [
     "squeeze",
     "suspend",
     "cloudy",
